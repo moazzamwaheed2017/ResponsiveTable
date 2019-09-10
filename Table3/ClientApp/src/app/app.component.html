@@ -1,0 +1,18 @@
+<div>
+  <nav>    
+    <ul class="main-ul">
+      <li>        
+        <ul>         
+          <li>
+            <a href="#server-scrolling" (click)="state = 'server-scrolling'">Scrolling</a>
+          </li>         
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <content>
+    
+     <server-scrolling-demo *ngIf="state === 'server-scrolling'"></server-scrolling-demo>
+
+  </content>
+</div>
